@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Development Blog</title>
+<style>
+    body {
+        background-color: #222;
+        color: #ccc;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        background-color: #111;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .header img {
+        height: 60px;
+    }
+    .header .title {
+        font-size: 24px;
+        color: #fff;
+    }
+    .container {
+        display: flex;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+    .content {
+        flex: 3;
+        margin-right: 20px;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 6px;
+    }
+    .content h2 {
+        color: #fff;
+    }
+    .content p {
+        line-height: 1.5;
+    }
+    .content .warning {
+        color: #f55;
+        font-weight: bold;
+    }
+    .content .buttons {
+        margin-top: 10px;
+    }
+    .content .buttons button {
+        background-color: #444;
+        color: #fff;
+        border: none;
+        padding: 5px 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    .content .buttons button:hover {
+        background-color: #666;
+    }
+    .sidebar {
+        flex: 1;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 6px;
+    }
+    .sidebar h3 {
+        color: #fff;
+        border-bottom: 1px solid #555;
+        padding-bottom: 5px;
+    }
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+    .sidebar ul li {
+        margin: 10px 0;
+    }
+    .sidebar ul li a {
+        color: orange;
+        text-decoration: none;
+    }
+    .sidebar ul li a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.png" alt="Logo">
+    <div class="title">Development Blog</div>
+</div>
+
+<div class="container">
+    <div class="content">
+        <h2>Early Access Download</h2>
+        <p>
+            Here you can download a totally pre-alpha early access version of the mod. Remember this version will have 
+            <span class="warning">BUGS, CRASHES</span> and other <span class="warning">PROBLEMS</span>.
+            It may totally screw up your game save so better back it up before playing.
+        </p>
+
+        <p>Do you understand?</p>
+        <div class="buttons">
+            <button onclick="window.location.href='https://www.dropbox.com/scl/fi/fgem30lnyjn85qqtm7l2y/OSCLauncher.zip?rlkey=uy1m1svlintksdjhjbwwerobj&st=585l4a8s&dl=1'">Yes</button>
+            <button onclick="window.location.href='https://oursummercar614.github.io/OursummercarHome/'">No</button>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Pages</h3>
+        <ul>
+            <li><a href="https://oursummercar614.github.io/OursummercarHome/">Home</a></li>
+            <li><a href="https://oursummercar614.github.io/Oursummercar-FAQ/">FAQ</a></li>
+            <li><a href="">Early Access Download</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
